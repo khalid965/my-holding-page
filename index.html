@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #111827;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen items-center justify-center">
+
+    <main class="container mx-auto px-4 py-8 md:py-16 flex-grow flex items-center justify-center">
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-16 text-center max-w-2xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
+                Coming Soon
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">
+                Our new website is currently under development. Please check back soon!
+            </p>
+            
+            <!-- Contact Section -->
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
+                <p class="text-md text-gray-600 mb-6">
+                    If you have a question, please feel free to send us a message.
+                </p>
+                <!-- NOTE: This is a static HTML form and will not send emails on its own. It requires a backend service to process submissions. -->
+                <form class="max-w-md mx-auto">
+                    <div class="mb-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md bg-gray-50 border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-200" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md bg-gray-50 border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-200" required>
+                    </div>
+                    <div class="mb-6">
+                        <textarea rows="4" placeholder="Your Message" class="w-full p-3 rounded-md bg-gray-50 border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-200" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4 mt-auto">
+        <p class="text-xs">© 2025 MyBusiness. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
