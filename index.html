@@ -3,59 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Our Company - Homepage</title>
+    
+    <link rel="icon" type="image/x-icon" href="http://googleusercontent.com/image_generation_content/8">
+    
     <style>
+        /* General body and font styles */
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f9fafb;
-            color: #111827;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8; /* A very light blue-gray background */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Main container for page content */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header styles */
+        h1 {
+            color: #2c3e50; /* Dark blue heading color */
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #34495e; /* Slightly lighter heading color */
+            border-bottom: 2px solid #3498db; /* A blue line under the heading */
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* Paragraph styles */
+        p {
+            text-align: justify;
+        }
+
+        /* Styling for the services list */
+        .services-list {
+            list-style-type: none; /* Removes the default bullet points */
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .services-list li {
+            background-color: #ecf0f1; /* Light gray background for list items */
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #3498db; /* A blue stripe on the left */
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .services-list li:hover {
+            background-color: #e0e6e9; /* Darken on hover */
+        }
+        
+        /* Style for the logo image to center it */
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 200px; /* You can adjust the size as needed */
+            height: auto;
         }
     </style>
 </head>
-<body class="flex flex-col min-h-screen items-center justify-center">
+<body>
 
-    <main class="container mx-auto px-4 py-8 md:py-16 flex-grow flex items-center justify-center">
-        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-16 text-center max-w-2xl">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
-                Coming Soon
-            </h1>
-            <p class="text-lg md:text-xl text-gray-600 mb-8">
-                Our new website is currently under development. Please check back soon!
-            </p>
-            
-            <!-- Contact Section -->
-            <div class="mt-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
-                <p class="text-md text-gray-600 mb-6">
-                    If you have a question, please feel free to send us a message.
-                </p>
-                <!-- NOTE: This is a static HTML form and will not send emails on its own. It requires a backend service to process submissions. -->
-                <form class="max-w-md mx-auto">
-                    <div class="mb-4">
-                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md bg-gray-50 border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-200" required>
-                    </div>
-                    <div class="mb-4">
-                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md bg-gray-50 border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-200" required>
-                    </div>
-                    <div class="mb-6">
-                        <textarea rows="4" placeholder="Your Message" class="w-full p-3 rounded-md bg-gray-50 border border-gray-300 focus:outline-none focus:border-indigo-500 transition-colors duration-200" required></textarea>
-                    </div>
-                    <button type="submit" class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </main>
+    <div class="container">
+        <h1>Welcome to Our Company</h1>
+        
+       <img src="logo.png" alt="KMAG Consultancy Ltd Logo" class="logo">
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-4 mt-auto">
-        <p class="text-xs">© 2025 MyBusiness. All Rights Reserved.</p>
-    </footer>
+        <p>
+            We are a leading provider of professional services, dedicated to helping
+            businesses achieve their goals. Our team of experts delivers tailored solutions
+            to meet your specific needs.
+        </p>
+
+        <h2>Our Services</h2>
+        <ul class="services-list">
+            <li>Project Management</li>
+            <li>Business Analysis</li>
+            <li>Software Testing</li>
+        </ul>
+
+        <p>
+            Contact us today to learn how we can help your business succeed.
+        </p>
+    </div>
 
 </body>
 </html>
